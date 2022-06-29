@@ -18,14 +18,14 @@ html{
 }
 
 body{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-content: center;  
+  height:100vh;
 }
 section{
-   position: absolute;
-   top:50%;
-   transform: translateY(-40%);
+   /*position: absolute;*/
+   /*top:50%;
+   transform: translateY(-40%);*/
    width: 300px;
    height: 400px;
 }
