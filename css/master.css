@@ -19,31 +19,41 @@ html{
 
 body{
   display: grid;
-  place-content: center;  
-  height:100vh;
+  /* place-content: center; */
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
 }
 section{
-   /*position: absolute;*/
-   /*top:50%;
-   transform: translateY(-40%);*/
    width: 300px;
-   height: 400px;
+   height: 360px;
+   box-shadow: -1px 0px 10px 0px rgba(0,0,0,0.75);
 }
 .centro{
    background: var(--color2);
    width: inherit;
-   height: 160px;
+   height: 200px;
    display: grid;
-   align-items: stretch;
+   /* align-items: stretch; */
 }
-.superior, .inferior{
+.superior{
    background: var(--color1);
    width: inherit;
-   height: 70px;
+   height: 100px;
    text-align: center;
-   display: flex;
+   /* display: flex;
    align-items: center;
-   justify-content: center;
+   justify-content: center; */
+   color:var(--color2);
+}
+.inferior{
+   background: var(--color1);
+   width: inherit;
+   height: 60px;
+   text-align: center;
+   /* display: flex;
+   align-items: center;
+   justify-content: center; */
    color:var(--color2);
 }
 .centro__cajas{
@@ -52,7 +62,14 @@ section{
    border:1px solid var(--color1);
    border-radius: 5px;
    margin:0 auto;
-   margin-top: 5px;
+   /* margin-top: 5px; */
+}
+.caja1{
+   margin-top: 20px;
+}
+.section__1{
+   display: grid;
+   align-items: center;
 }
 .div__iconos{
    width: 38px;
@@ -81,13 +98,17 @@ section{
    border-radius: 5px;
 }
 
-.div__button:hover{
-
-}
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
   'wght' 300,
   'GRAD' 0,
   'opsz' 48
+}
+
+h3{
+   font-size: 2.6rem;
+}
+p{
+   font-size: 1.2rem;
 }
