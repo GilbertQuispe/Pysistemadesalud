@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200;300;400;700&display=swap');
+:root{
+   --color1:#364D5C;
+   --color2:#FFF;
+   --color3:#42C474;
+   --color4:#3b5998;
+   --color5:#edeef3;
+}
+*{
+   box-sizing: border-box;
+   margin:0;
+   padding: 0;
+}
+html{
+   font-size: 62.5%;
+   font-family: 'Source Sans 3', sans-serif;
+   background: rgba(179,220,237,1);
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section{
+   position: absolute;
+   top:50%;
+   transform: translateY(-40%);
+   width: 300px;
+   height: 400px;
+}
+.centro{
+   background: var(--color2);
+   width: inherit;
+   height: 160px;
+   display: grid;
+   align-items: stretch;
+}
+.superior, .inferior{
+   background: var(--color1);
+   width: inherit;
+   height: 70px;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color:var(--color2);
+}
+.centro__cajas{
+   width: 278px;
+   height: 40px;
+   border:1px solid var(--color1);
+   border-radius: 5px;
+   margin:0 auto;
+   margin-top: 5px;
+}
+.div__iconos{
+   width: 38px;
+   height: 38px;
+   background:var(--color1);
+   color:var(--color2);
+   text-align: center;
+   /* padding-top: 5px; */
+
+}
+.div__input{
+   width: 238px;
+   height: 37px;
+   /* border-style: none; */
+   outline: none;
+   border:0;
+   background: var(--color5);
+   border-radius: 0 5px 5px 0;
+
+}
+
+.div__button{
+   width: 276px;
+   height: 38px;
+   background: var(--color3);
+   border-radius: 5px;
+}
+
+.div__button:hover{
+
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 48
+}
